@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numeros Primos</title>
+</head>
+
+<style>
+  
+  body{
+    /* El body esta alineado de forma horizontal utilizando un margen de 125px*/
+    display: flex;
+    justify-content: space-around;
+    margin-top: 125px;
+  }
+
+div.principal{
+  height: 300px;
+  width: 300px;
+  background-color: #E1F5A9;
+  border: blue solid;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  justify-content: center;
+}
+
+div.conteo{
+  height: 35px;
+  width: 35px;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+</style>
+
+<body onload="init()">
+
+  <script> 
+ 
+  var valor1;
+  var valor2;
+   // Esta función lo que hace es que al cargar la pagina les asigna por defecto el valor 1 a las dos variables 
+  function init(){
+      valor1 = 1;
+       valor2 = 1; 
+  }
+
+    //Función valida lo que hcae es tomar los valor ingresados y validar que sean tipo numerico
+    function valida(){
+      valor1 = Number(document.getElementById("val1").value);
+      valor2 = Number(document.getElementById("val2").value);
+        if (isNaN(formulario.val1.value) || isNaN(formulario.val2.value)){
+          alert("Error, debe ingresar un valor numerico!")
+          formulario.val1.focus();
+          return false;
+                
+        }else{
+          this.primo(valor1, valor2);
+          this.contador();
+          return true;
+        }
+    }
+  //Función Primo lo que hace es determinar si un numero es primo o no para agregarlo a la lista
+  function primo(ini, fin){
+    var listacompra;
+    var lista;
+    //recorreo con un ciclo for desde el valor inicio al valor fin
+    for(i=ini; i<fin; i++){
+      // por cada recorrido valida si i es primo o no mediante el operador aritmetico mod 
+       if ((i % 2) != 0){
+         // si es primo entra en el if y agrega el valor a la lista ordenada
+              listaCompra = document.getElementById("listap");
+              lista =document.createElement("li"); 
+              lista.innerHTML = i;
+              listaCompra.appendChild(lista);
+          }
+      }   
+  }
+  var c = 0;
+  //esta función limpia los campos de primer y segundo valor, la lista y el contador
+  function reiniciar(){
+   c = 0;
+   document.getElementById("cont").innerHTML = c;
+   document.getElementById("val1").value = "";
+   document.getElementById("val2").value = "";
+   document.getElementById("listap").innerHTML = "";
+            }
+  // Esta función lo que hace es llevar un contador de las veces que se  ha presionado el botón Numeros Primos
+  function contador(){    
+    c++;
+    document.getElementById("cont").innerHTML = c;
+  }
+    </script>
+  
+<div class="principal">
+  <form name="formulario" action="#">
+  Ingrese el Primer valor:  <input type="text" id="val1" value="">
+  <br>
+  <br>
+  Ingrese el Segundo valor:  <input type="text" id="val2" value="">
+<br>
+<br>
+<input type="button" id="primos" value="Numeros Primos" onclick="valida()">
+<input type="button" id="reinicia" value="Reinicia" onclick="reiniciar()">
+<br>
+<br>
+</form>
+<ul id="listap"></ul>
+</div>
+<div class="conteo">
+<p id="cont">0</p> 
+</div>
+</body>
+</html>

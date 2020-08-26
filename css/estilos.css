@@ -1,0 +1,107 @@
+body, html{
+
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Verdana;
+
+}
+ header{
+    background-color: rgb(133, 10, 10);
+    width: 100%;
+    height: 75px;
+    color: #FFFFA0;
+    display: flex;
+    justify-content: center 70%; 
+ }
+
+ header .Encabezado{
+    width: 100%;
+    height: 100%;
+    color: #333;
+    font-size: 20px;
+    display: flex;  
+    justify-content: center;
+ }
+
+ nav {
+   background-color: rgb(64, 60, 60);
+   width: 100%;
+   height: 310px;
+ }
+
+ nav .Imagen{
+   width: 125px;
+   height: 125px;
+ }
+
+ nav .genero{
+    color: #000;
+   font-size: 12px;
+}
+
+ section {
+   background-color: rgb(64, 60, 60);
+   width: 100%;
+   height: 100%;
+
+ }
+
+ section .Integrantes{
+   color: #666;
+   font-size: 16px;
+}
+
+section .listaIntegrantes{
+   background-color: rgb(50, 3, 76);
+   color: #00ABBF;
+   font-size: 12px;
+}
+
+section .Discografia{
+   color: #666;
+   font-size: 16px;
+}
+
+table {
+   background-color: #fff;
+   border-color: black;
+   border-style: solid;
+   border-width: 1px;  
+   color: #000;
+   font-size: 12px;
+   justify-content: center;
+}
+
+section .titulo{
+   color:#000;
+   font-size: 14px;
+}
+
+section .titulosTabla{
+   background-color: #666;
+   color: white;
+   font-size: 12px;
+}
+
+section .DiscoMasExitoso{
+   background-color: #ccc;
+}
+
+footer{
+   background-color: rgb(64, 60, 60);
+   width: 100%;
+   height: 100%;
+
+}
+
+footer .Sitio{
+   color: #666;
+   font-size: 16px;
+}
+
+footer .direccion{
+   text-decoration-color: red;
+   color: red;
+   font-size: 16px;
+}

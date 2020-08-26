@@ -55,7 +55,7 @@ a:hover {
 .service-box,
 .work-box,
 .card-blog {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
 .box-shadow-a,
@@ -89,9 +89,6 @@ a:hover {
   background-position: center center;
 }
 
-.overlay-mf {
-  background-color: #0078ff;
-}
 
 .overlay-mf {
   position: absolute;
@@ -127,6 +124,8 @@ a:hover {
 
 .sect-pt4 {
   padding-top: 4rem;
+  padding-right: 7.5rem;
+  padding-left: 7.5rem;
 }
 
 .sect-mt4 {
@@ -1058,11 +1057,11 @@ a:hover {
 ======================================*/
 
 .footer-paralax {
-  padding: 4rem 0 0 0;
+  padding:1rem 0 0 0;
 }
 
 .contact-mf {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 /*======================================
